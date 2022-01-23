@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+<p>
+    <a class="btn btn-light" href="{% url 'participant_management_race_list' %}">
+    race Listing
+    </a>
+</p>
+    
+<table class="table">
+    <tr><td>end_date</td><td>{{ object.end_date }}</td></tr>
+    <tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+    <tr><td>description</td><td>{{ object.description }}</td></tr>
+    <tr><td>start_date</td><td>{{ object.start_date }}</td></tr>
+    <tr><td>name</td><td>{{ object.name }}</td></tr>
+    <tr><td>created</td><td>{{ object.created }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit</a>
+
+{% endblock %}

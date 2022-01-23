@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-2"><h4>participant_management</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_boat_type_list' %}">boat_type Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_race_list' %}">race Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_crew_list' %}">crew Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_rower_list' %}">rower Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_boat_list' %}">boat Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'participant_management_heat_list' %}">heat Listing</a></div>
+<div class="m-2"><h4>race_registration</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'race_registration_result_list' %}">result Listing</a></div>
+{% endblock %}
